@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBclienteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBcliente.dbo.tbCliente' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tbCliente">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="nome" />
+      <PropertyRef Name="email" />
+      <PropertyRef Name="cpf" />
+      <PropertyRef Name="carromarca" />
+      <PropertyRef Name="carromodelo" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="nome" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="email" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="cpf" Type="nchar" MaxLength="15" Nullable="false" />
+    <Property Name="carromarca" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="carromodelo" Type="nchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DBclienteModelStoreContainer">
+    <EntitySet Name="tbCliente" EntityType="Self.tbCliente" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbCliente].[id] AS [id], 
+    [tbCliente].[nome] AS [nome], 
+    [tbCliente].[email] AS [email], 
+    [tbCliente].[cpf] AS [cpf], 
+    [tbCliente].[carromarca] AS [carromarca], 
+    [tbCliente].[carromodelo] AS [carromodelo]
+    FROM [dbo].[tbCliente] AS [tbCliente]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 0,
+    "nome": "Marta",
+    "email": "marta@gmail.com",
+    "cpf": "06409812387",
+    "carromarca": "FIAT",
+    "carromodelo": "Palio"
+  },
+  {
+    "id": 1,
+    "nome": "Paulo",
+    "email": "paulo@gmail.com",
+    "cpf": "306409812387",
+    "carromarca": "FIAT",
+    "carromodelo": "Palio"
+  },
+  {
+    "id": 2,
+    "nome": "Paulo",
+    "email": "paulo@gmail.com",
+    "cpf": "306409812387",
+    "carromarca": "FIAT",
+    "carromodelo": "Palio"
+  },
+  {
+    "id": 5,
+    "nome": "vitor",
+    "email": "vitoso@gmail.com",
+    "cpf": "306409812387",
+    "carromarca": "FIfAT",
+    "carromodelo": "Palfio"
+  }
+]
